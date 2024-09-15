@@ -1,0 +1,367 @@
+@font-face {
+  font-family: Roboto;
+  src: url(../font/Roboto-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Source Serif";
+  src: url(../font/SourceSerif-Regular.ttf);
+  font-weight: 400;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+input {
+  all: unset;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.btn {
+  color: #fff;
+  background-color: #3A5F56;
+  border-radius: 6px;
+  padding: 10px 18px;
+}
+
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.header__box {
+  display: flex;
+}
+.header__nav {
+  display: flex;
+}
+.header__ul {
+  display: flex;
+  align-items: center;
+}
+.header__menu {
+  display: flex;
+}
+.header__link {
+  color: #3A5F56;
+  font-size: 16px;
+}
+.header__link:hover {
+  color: red;
+}
+.header__items {
+  display: flex;
+}
+.header_item {
+  margin-right: 30px;
+}
+.header__cart {
+  display: flex;
+  gap: 8px;
+}
+.header__cart::before {
+  content: "";
+  background: url(../img/cart.svg);
+  display: block;
+  width: 17px;
+  height: 17px;
+}
+.header__cart::after {
+  content: "0";
+  color: #3A5F56;
+  background-color: #fff;
+  border-radius: 19px;
+  text-align: center;
+  width: 17px;
+  height: 17px;
+  font-size: 14px;
+}
+
+.main {
+  background: url(../img/Frame.svg) no-repeat center center/cover;
+  padding: 100px 0;
+}
+.main__wrap {
+  display: flex;
+  gap: 64px;
+  align-items: center;
+}
+.main__title {
+  color: #3A5F56;
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+.main__text {
+  color: #3A5F56;
+  font-size: 16px;
+  margin-bottom: 27px;
+}
+
+.services {
+  padding: 100px 0;
+}
+.services__title {
+  margin-top: 15px;
+  color: #3A5F56;
+  font-size: 32px;
+  margin-bottom: 11px;
+  text-align: center;
+}
+.services__title_wave {
+  display: flex;
+  padding-top: 100px;
+  align-items: center;
+  margin: 0 auto;
+}
+.services__text {
+  color: #292C32;
+  font-size: 16px;
+  max-width: 590px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 17px;
+  padding-bottom: 17px;
+}
+.services__text_center {
+  text-align: center;
+  padding-bottom: 17px;
+}
+.services__row {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  gap: 16px;
+  padding-bottom: 100px;
+}
+.services_card {
+  max-width: 380px;
+  border-radius: 16px;
+  background-color: #F4F3F0;
+  padding: 30px;
+}
+.services__icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 9px;
+}
+.services__subtitle {
+  color: #3A5F56;
+  font-size: 24px;
+  margin-bottom: 6px;
+  padding-bottom: 17px;
+}
+.services_text {
+  padding-bottom: 17px;
+}
+.services__read {
+  margin-top: 17px;
+  color: #3A5F56;
+  font-size: 17px;
+  align-items: center;
+  gap: 5px;
+}
+.services__read:hover {
+  color: red;
+}
+
+.preset {
+  background-color: #F4F3F0;
+}
+.preset__title {
+  font-family: "Source Serif", sans-serif;
+  margin-top: 15px;
+  color: #3A5F56;
+  font-size: 32px;
+  margin-bottom: 11px;
+  text-align: center;
+  color: #DB343B;
+}
+.preset__title_wave {
+  display: flex;
+  padding-top: 100px;
+  align-items: center;
+  margin: 0 auto;
+}
+.preset__text {
+  color: #292C32;
+  font-size: 16px;
+  max-width: 590px;
+  text-align: center;
+  margin: 0 auto;
+  color: #292C32;
+}
+.preset__cards {
+  padding-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  gap: 16px;
+  padding-bottom: 100px;
+  font-family: "Roboto", sans-serif;
+}
+.preset__cards_btn {
+  padding-top: 29px;
+  display: flex;
+  margin: 0 auto;
+  color: #3A5F56;
+  gap: 5px;
+}
+.preset__cards_btn_text {
+  color: #3A5F56;
+}
+.preset__card1 {
+  width: 380px;
+  height: 438px;
+  border-radius: 16px;
+  background-color: #fff;
+  background-image: url(../img/vol1.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 30px;
+  color: #3A5F56;
+}
+.preset__card1_title {
+  font-family: "Source Serif", sans-serif;
+  font-size: 24px;
+  padding-top: 258px;
+}
+.preset__card1_text {
+  padding-top: 10px;
+}
+.preset__card2 {
+  width: 380px;
+  height: 438px;
+  border-radius: 16px;
+  background-color: #fff;
+  background-image: url(../img/vol2.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 30px;
+  color: #3A5F56;
+}
+.preset__card2_title {
+  font-family: "Source Serif", sans-serif;
+  font-size: 24px;
+  padding-top: 258px;
+}
+.preset__card2_text {
+  padding-top: 10px;
+}
+.preset__card3 {
+  width: 380px;
+  height: 438px;
+  border-radius: 16px;
+  background-color: #fff;
+  background-image: url(../img/vol3.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 30px;
+  color: #3A5F56;
+}
+.preset__card3_title {
+  font-family: "Source Serif", sans-serif;
+  font-size: 24px;
+  padding-top: 258px;
+}
+.preset__card3_text {
+  padding-top: 10px;
+}
+
+.together {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.together__block {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 80px;
+  background-color: #F4F3F0;
+  border-radius: 16px;
+  width: 800px;
+}
+.together__block_text {
+  font-size: 28px;
+  color: #3A5F56;
+}
+.together__block_btn {
+  background-color: #3A5F56;
+  margin: auto 0;
+  padding: 15px 25px;
+  border-radius: 6px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.podval {
+  background-color: #292C32;
+  padding: 99px 136px;
+}
+.podval__logo {
+  display: block;
+  margin: 0 auto;
+}
+.podval__block {
+  padding-top: 75px;
+  display: block;
+}
+.podval__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 140px;
+}
+.podval__title {
+  font-size: 14px;
+  padding-bottom: 12px;
+  text-transform: uppercase;
+  color: #B87D58;
+}
+.podval__links {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  font-size: 14px;
+  color: #fff;
+}
+.podval__email {
+  margin-top: 20px;
+}
+.podval__email_input {
+  padding: 15px 25px;
+  background-color: #fff;
+  border-radius: 8px;
+  color: #000;
+}
+.podval__email_btn {
+  margin-left: 20px;
+  background-color: #3f3f3f;
+  padding: 15px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.podval__copyright {
+  margin-top: 50px;
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: -70px;
+}/*# sourceMappingURL=main.css.map */
